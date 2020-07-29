@@ -1,4 +1,6 @@
 function textSearch() {
   var searchWord = document.getElementById("inputMessage").value; //テキストボックスの値を取得
-  console.log(searchWord);
+  $.getJSON("data.json", function (data) {
+    console.log(data);
+  });
 }
