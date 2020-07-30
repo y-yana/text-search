@@ -11,3 +11,9 @@ function textSearch() {
     }
   });
 }
+
+function keydown_enter() {
+  if (window.event.keyCode == 13) {
+    document.getElementById("searchBtn").click();
+  }
+}
