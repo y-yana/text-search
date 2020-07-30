@@ -12,8 +12,14 @@ function textSearch() {
   });
 }
 
+function textReset() {
+  $("p").remove();
+  $("#inputMessage").val("");
+}
+
 function keydown_enter() {
   if (window.event.keyCode == 13) {
+    $("p").remove();
     document.getElementById("searchBtn").click();
   }
 }
