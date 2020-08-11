@@ -9,13 +9,13 @@
 
 <body>
   <form>
-    <select id="bookType">
+    <select id="bookType" onchange="typeChange()">
       <option>ジャンルを選択してください</option>
       <option>小説</option>
       <option>絵本</option>
       <option>漫画</option>
     </select>
-    <select id="bookPeriod">
+    <select id="bookPeriod" onchange="periodChange()">
       <option>年代を選択してください</option>
       <option>明治</option>
       <option>大正</option>
@@ -23,7 +23,7 @@
       <option>平成</option>
     </select>
   </form>
-  <input type="text" id="inputMessage" onkeydown="keydown_enter()">
+  <input type="text" id="inputMessage" onkeydown="keydown_enter()" onchange="textChange()">
   <button id="searchBtn" onclick="textSearch()">検索</button>
   <button id="resetBtn" onclick="textReset()">リセット</button>
   <div id="result">

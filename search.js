@@ -24,6 +24,9 @@ function textSearch() {
 function textReset() {
   $("p").remove();
   $("#inputMessage").val("");
+  document.getElementById("bookType").disabled = false;
+  document.getElementById("bookPeriod").disabled = false;
+  document.getElementById("inputMessage").disabled = false;
   document.getElementById("bookType").options[0].selected = true;
   document.getElementById("bookPeriod").options[0].selected = true;
 }
@@ -32,5 +35,35 @@ function keydown_enter() {
   if (window.event.keyCode == 13) {
     $("p").remove();
     document.getElementById("searchBtn").click();
+  }
+}
+
+function typeChange() {
+  if (document.getElementById("bookType").selectedIndex != 0) {
+    document.getElementById("bookPeriod").disabled = true;
+    document.getElementById("inputMessage").disabled = true;
+  } else {
+    document.getElementById("bookPeriod").disabled = false;
+    document.getElementById("inputMessage").disabled = false;
+  }
+}
+
+function periodChange() {
+  if (document.getElementById("bookPeriod").selectedIndex != 0) {
+    document.getElementById("bookType").disabled = true;
+    document.getElementById("inputMessage").disabled = true;
+  } else {
+    document.getElementById("bookType").disabled = false;
+    document.getElementById("inputMessage").disabled = false;
+  }
+}
+
+function textChange() {
+  if (document.getElementById("inputMessage").value != "") {
+    document.getElementById("bookType").disabled = true;
+    document.getElementById("bookPeriod").disabled = true;
+  } else {
+    document.getElementById("bookType").disabled = false;
+    document.getElementById("bookPeriod").disabled = false;
   }
 }
