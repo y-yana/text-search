@@ -24,6 +24,8 @@ function textSearch() {
 function textReset() {
   $("p").remove();
   $("#inputMessage").val("");
+  document.getElementById("bookType").options[0].selected = true;
+  document.getElementById("bookPeriod").options[0].selected = true;
 }
 
 function keydown_enter() {
