@@ -1,4 +1,5 @@
 function textSearch() {
+  $("p").remove();
   var searchWord = document.getElementById("inputMessage").value;
   type = document.getElementById("bookType");
   if (bookType.selectedIndex != 0) {
