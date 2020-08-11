@@ -16,6 +16,9 @@ function textSearch() {
         var p = document.createElement("p");
         p.innerHTML = data.bookData[i].title + "&emsp;&emsp;著者：" + data.bookData[i].author + "&emsp;&emsp;ジャンル：" + data.bookData[i].type + "&emsp;&emsp;年代：" + data.bookData[i].period + "<br>" + data.bookData[i].summary;
         parent.appendChild(p);
+        if (searchWord == "") {
+          $("p").remove();
+        }
       }
     }
   });
