@@ -1,0 +1,14 @@
+body{
+  width: 700px;
+  margin: 0 auto;
+}
+
+#result{
+  margin-top: 20px;
+}
+
+#result p{
+  margin: 0px;
+  padding: 20px 0px;
+  border-bottom: dashed 1px blue;
+}
