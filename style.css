@@ -3,12 +3,38 @@ body{
   margin: 0 auto;
 }
 
-#result{
-  margin-top: 20px;
+#searchField{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px auto;
+}
+
+#bookType{
+  height: 25px;
+  margin: 0px 10px;
+}
+
+#bookPeriod{
+  height: 25px;
+  margin-right: 5px;
+}
+
+#inputMessage{
+  height: 19px;
+  margin: 0px 10px;
+}
+
+#searchBtn{
+  margin:0px 5px 0px 10px;
+}
+
+#resetBtn{
+  margin: 0px 10px;
 }
 
 #result p{
   margin: 0px;
   padding: 20px 0px;
-  border-bottom: dashed 1px blue;
+  border-bottom: dashed 1px #87888e;
 }
