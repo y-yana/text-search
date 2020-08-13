@@ -35,6 +35,6 @@ body{
 
 #result p{
   margin: 0px;
-  padding: 20px 0px;
-  border-bottom: dashed 1px #87888e;
+  padding: 20px 10px;
+  border-bottom: dashed 1px #576196;
 }
