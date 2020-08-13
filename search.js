@@ -45,6 +45,7 @@ function typeChange() {
   if (document.getElementById("bookType").selectedIndex != 0) {
     document.getElementById("bookPeriod").disabled = true;
     document.getElementById("inputMessage").disabled = true;
+    document.getElementById("searchBtn").click();
   } else {
     document.getElementById("bookPeriod").disabled = false;
     document.getElementById("inputMessage").disabled = false;
@@ -55,6 +56,7 @@ function periodChange() {
   if (document.getElementById("bookPeriod").selectedIndex != 0) {
     document.getElementById("bookType").disabled = true;
     document.getElementById("inputMessage").disabled = true;
+    document.getElementById("searchBtn").click();
   } else {
     document.getElementById("bookType").disabled = false;
     document.getElementById("inputMessage").disabled = false;
