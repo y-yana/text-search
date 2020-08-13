@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <title>text search</title>
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
 <body>
@@ -25,7 +26,7 @@
       </select>
     </form>
     <input type="text" id="inputMessage" onkeydown="keydown_enter()" onchange="textChange()" placeholder="フリーワードで検索">
-    <button id="searchBtn" onclick="textSearch()">検索</button>
+    <button id="searchBtn" onclick="textSearch()"><i class="material-icons">search</i></button>
     <button id="resetBtn" onclick="textReset()">リセット</button>
   </div>
   <div id="result">

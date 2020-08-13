@@ -11,26 +11,29 @@ body{
 }
 
 #bookType{
-  height: 25px;
+  height: 32px;
   margin: 0px 10px;
 }
 
 #bookPeriod{
-  height: 25px;
+  height: 32px;
   margin-right: 5px;
 }
 
 #inputMessage{
-  height: 19px;
+  height: 28px;
+  width: 200px;
   margin: 0px 10px;
 }
 
 #searchBtn{
-  margin:0px 5px 0px 10px;
+  margin:0px 5px 0px 5px;
+  padding: 3px 10px 0px 12px;
 }
 
 #resetBtn{
   margin: 0px 10px;
+  padding: 5px 10px 5px 10px;
 }
 
 #result p{
