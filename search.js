@@ -14,7 +14,7 @@ function textSearch() {
       if (searchWord == data.bookData[i].title || searchWord == data.bookData[i].author || searchWord == data.bookData[i].type || searchWord == data.bookData[i].period || data.bookData[i].summary.match(searchWord)) {
         var parent = document.getElementById("result");
         var p = document.createElement("p");
-        p.innerHTML ="<span id='title'>"+ data.bookData[i].title + "</span><span id='author'>著者：" + data.bookData[i].author + "</span><span id='type'>ジャンル：" + data.bookData[i].type + "</span><span id='period'>年代：" + data.bookData[i].period + "</span><span id='summary'>" + data.bookData[i].summary + "</span>";
+        p.innerHTML ="<span id='title'>"+ data.bookData[i].title + "</span><br><span id='author'>著者：" + data.bookData[i].author + "</span><span id='type'>ジャンル：" + data.bookData[i].type + "</span><span id='period'>年代：" + data.bookData[i].period + "</span><br><span id='summary'>" + data.bookData[i].summary + "</span>";
         parent.appendChild(p);
         if (searchWord == "") {
           $("p").remove();
