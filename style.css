@@ -48,12 +48,21 @@ body{
   color: #ffffff;
 }
 
+#searchBtn:hover{
+  background-color: #7ae0ff;
+}
+
 #resetBtn{
   margin: 0px 10px;
   padding: 5px 10px 5px 10px;
   border: none;
   border-radius: 3px;
   background-color: #ffffff;
+}
+
+#resetBtn:hover{
+  background-color: #ffee53;
+  font-weight: bold;
 }
 
 #result p{
