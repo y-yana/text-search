@@ -49,6 +49,7 @@ function typeChange() {
   } else {
     document.getElementById("bookPeriod").disabled = false;
     document.getElementById("inputMessage").disabled = false;
+    $("p").remove();
   }
 }
 
@@ -60,6 +61,7 @@ function periodChange() {
   } else {
     document.getElementById("bookType").disabled = false;
     document.getElementById("inputMessage").disabled = false;
+    $("p").remove();
   }
 }
 
