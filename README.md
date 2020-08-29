@@ -1,3 +1,7 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/f35caa63-fe1e-4664-92c6-2286a484ae0e/deploy-status)](https://app.netlify.com/sites/y-yuna-text-search/deploys)
+
+View on Netlify site : [https://y-yuna-text-search.netlify.app/](https://y-yuna-text-search.netlify.app/)
+
 # text-search &#x1f4c4;&#x1f50d;
 JSONファイルに格納されている書籍情報を検索して、表示させるWebアプリケーションです。
 ## 使い方
